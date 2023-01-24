@@ -1,0 +1,33 @@
+.overviewWrapper {
+    padding: 0 var(--gap-80) var(--gap-80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* overflow: none; */
+}
+
+.title {
+    text-align: start;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--color-dark);
+    padding-bottom: var(--gap-48)
+}
+
+.title::first-letter {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.pokedex {
+    display: grid;
+    grid-template-columns: 440px 440px 440px;
+    grid-row-gap: var(--gap-40);
+}
+
+.continue {
+    font-weight: 600;
+    font-size: 40px;
+    padding-top: var(--gap-40);
+}

@@ -1,0 +1,46 @@
+.cardWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  width: 450px;
+  border-radius: 12px;
+  padding: var(--gap-32) 0;
+  width: 410px;
+  text-decoration: none;
+}
+
+.cardWrapper:hover {
+  box-shadow: 0 12px 40px -5px #5a60644d;
+  transform: scale(1.02);
+  transition-duration: 0.5s;
+}
+
+.background-image {
+  position: absolute;
+  background-image: url('./../../assets/img/background-pokemon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.position {
+  padding-top: var(--gap-24);
+}
+
+.name {
+  font-weight: bold;
+  color: var(--color-dark);
+  font-size: 25px;
+}

@@ -1,0 +1,27 @@
+.statsWrapper {
+    width: 100%;
+}
+
+.titles h1 {
+    padding: 60px 0 10px 0;
+    color: var(--color-dark);
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.statsProgress div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.statsProgress div p {
+    line-height: 50px;
+}
+
+.statsProgress progress {
+    width: 340px;
+    background-color: #fff;
+    border: none;
+}
+
