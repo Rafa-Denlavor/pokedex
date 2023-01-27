@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders learn react link 1`] = `
+<div>
+  <div
+    class="footer"
+  >
+    <img
+      alt="Logo Pokemon"
+      class="logo"
+      src="images/logo.svg"
+    />
+  </div>
+</div>
+`;

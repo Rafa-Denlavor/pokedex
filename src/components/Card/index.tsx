@@ -12,7 +12,7 @@ const Card = ({ id, image, name } : TCardProps) => {
   return (
     <Link id={id} to={`/details/${id}`} className="cardWrapper">
       <div className="background-image" />
-      <img className="image" src={image} />
+      <img className="image" src={image} alt={name || `Pokemon da posição: #${id}`} />
       <p className="position">#{id}</p>
       <h1 className="name">{name}</h1>
     </Link>

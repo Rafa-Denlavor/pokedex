@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<div>
+  <div
+    class="headerWrapper"
+  >
+    <img
+      src="images/logo.svg"
+    />
+    <input
+      class="search"
+      placeholder="Qual pokemon deseja procurar?"
+      type="search"
+      value=""
+    />
+  </div>
+</div>
+`;
