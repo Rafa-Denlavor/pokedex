@@ -3,10 +3,25 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .logo {
   width: 190px;
   padding: 20px 0;
+}
+
+.top {
+  border: 2px solid var(--color-white);
+  padding: var(--gap-8) var(--gap-8) 0 var(--gap-8);
+  border-radius: var(--gap-8);
+  scroll-behavior: smooth;
+}
+
+.top:target {
+  scroll-margin-top: .8em;
+}
+
+.top img {
+  width: 20px;
 }

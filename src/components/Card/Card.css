@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: center;
   box-shadow: var(--shadow);
-  width: 450px;
   border-radius: 12px;
   padding: var(--gap-32) 0;
   width: 410px;
@@ -20,7 +19,7 @@
 
 .background-image {
   position: absolute;
-  background-image: url('./../../assets/img/background-pokemon.svg');
+  background-image: url("./../../assets/img/background-pokemon.svg");
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.2;
@@ -43,4 +42,10 @@
   font-weight: bold;
   color: var(--color-dark);
   font-size: 25px;
+}
+
+@media screen and (max-width: 450px) {
+  .cardWrapper {
+    width: 300px;
+  }
 }
