@@ -13,7 +13,7 @@ const Footer = ({logo = 'images/logo.svg', path, arrow = 'images/seta.svg'} : Fo
         <div className='footer'>
             <img className='logo' src={logo} alt="Logo Pokemon" />
             <a className='top' href={path}>
-                <img src='images/seta.svg' alt='Seta para cima' />
+                <img src={arrow} alt='Seta para cima' />
             </a>
         </div>
     )

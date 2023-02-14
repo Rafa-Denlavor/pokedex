@@ -2,6 +2,12 @@
   "name": "my-pokedex",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
@@ -16,14 +22,9 @@
     "react-router-dom": "^6.5.0",
     "react-scripts": "^2.1.3",
     "react-select": "^5.7.0",
+    "react-tooltip": "^5.7.4",
     "typescript": "4.9.4",
     "web-vitals": "2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -44,11 +45,17 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^7.0.3"
+    "@types/react": "18.0.1",
+    "node-sass": "^7.0.3",
+    "typescript": "4.8.2"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "pokemon",
+    "pokedex",
+    "pokeagenda",
+    "pikachu"
+  ],
+  "author": "Rafaella Denlavor",
   "license": "ISC"
 }

@@ -1,6 +1,6 @@
 import Footer from "../../Footer";
 import Card from "../../Card";
-import { pokemon } from "../../../assets/constants";
+import firstGeneration from "../../../assets/mock/firstGeneration";
 import "../../../assets/styles/global.css";
 import "./Overview.css";
 import React, { useState } from "react";
@@ -10,13 +10,15 @@ import InformationCard from "../../InformationCard";
 const Overview = () => {
   const [search, setSearch] = useState("");
 
-  const filteredPokemons = pokemon.filter((item: any) => {
-    return item.name.includes(search);
+  const filteredPokemon = firstGeneration.filter((item: any) => {
+    const capitalFirstLetter = search.charAt(0).toUpperCase() + search.slice(1);
+
+    return item.name.includes(capitalFirstLetter);
   });
 
   return (
     <>
-      <div id='overview' className="overviewWrapper">
+      <div id="overview" className="overviewWrapper">
         <Header />
         <h2 className="title">| 1° Geração: Kanto</h2>
         <input
@@ -29,8 +31,8 @@ const Overview = () => {
           }}
         />
         <div className="pokedex">
-          {filteredPokemons.length > 0 &&
-            filteredPokemons.map((pokemon: any) => {
+          {filteredPokemon.length > 0 &&
+            filteredPokemon.map((pokemon: any) => {
               return (
                 <Card
                   key={pokemon.order}
@@ -41,10 +43,9 @@ const Overview = () => {
               );
             })}
         </div>
-        {filteredPokemons.length === 0 && <InformationCard />}
-        <h2 className="continue">. . .</h2>
+        {filteredPokemon.length === 0 && <InformationCard />}
       </div>
-      <Footer path='#overview' />
+      <Footer path="#overview" />
     </>
   );
 };

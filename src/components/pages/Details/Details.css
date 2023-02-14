@@ -33,12 +33,21 @@
   left: 305px;
 }
 
+.circle {
+  border-radius: 100%;
+  padding: 45px;
+}
+
 .pokemon {
-  width: 250px;
-  padding: 30px;
-  background-color: var(--color-white-300);
-  border-top-left-radius: 25%;
-  border-bottom-right-radius: 25%;
+  width: 170px;
+}
+
+.tooltip {
+  padding: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  opacity: 1;
+  max-width: 200px;
 }
 
 .content {
@@ -67,7 +76,7 @@
   background-color: var(--bug-background);
 }
 
-.bug + div img:first-child {
+.bug + div > div:first-child {
   background-color: var(--bug);
 }
 
@@ -75,7 +84,7 @@
   background-color: var(--grass-background);
 }
 
-.grass + div img:first-child {
+.grass + div > div:first-child {
   background-color: var(--grass);
 }
 
@@ -83,7 +92,7 @@
   background-color: var(--fire-background);
 }
 
-.fire + div img:first-child {
+.fire + div > div:first-child {
   background-color: var(--fire);
 }
 
@@ -91,7 +100,7 @@
   background-color: var(--water-background);
 }
 
-.water + div img:first-child {
+.water + div > div:first-child {
   background-color: var(--water);
 }
 
@@ -99,7 +108,7 @@
   background-color: var(--psychic-background);
 }
 
-.psychic + div img:first-child {
+.psychic + div > div:first-child {
   background-color: var(--psychic);
 }
 
@@ -107,7 +116,7 @@
   background-color: var(--poison-background);
 }
 
-.poison + div img:first-child {
+.poison + div > div:first-child {
   background-color: var(--poison);
 }
 
@@ -115,7 +124,7 @@
   background-color: var(--fairy-background);
 }
 
-.fairy + div img:first-child {
+.fairy + div > div:first-child {
   background-color: var(--fairy);
 }
 
@@ -123,7 +132,7 @@
   background-color: var(--eletric-background);
 }
 
-.eletric + div img:first-child {
+.eletric + div > div:first-child {
   background-color: var(--eletric);
 }
 
@@ -131,7 +140,7 @@
   background-color: var(--fighting-background);
 }
 
-.fighting + div img:first-child {
+.fighting + div > div:first-child {
   background-color: var(--fighting);
 }
 
@@ -139,7 +148,7 @@
   background-color: var(--ground-background);
 }
 
-.ground + div img:first-child {
+.ground + div > div:first-child {
   background-color: var(--ground);
 }
 
@@ -147,6 +156,6 @@
   background-color: var(--normal-background);
 }
 
-.normal + div img:first-child {
+.normal + div > div:first-child {
   background-color: var(--normal);
 }

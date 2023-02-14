@@ -1,11 +1,11 @@
 .sensitiveDataWrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     text-align: center;
 }
 
-.sensitiveDataWrapper p {
+.sensitiveDataWrapper article p {
     font-weight: 600;
     color: var(--color-dark);
     line-height: 40px;

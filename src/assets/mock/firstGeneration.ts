@@ -1,4 +1,4 @@
-export const pokemon: Record<string, any> = [
+const firstGeneration: Record<string, any> = [
   {
     name: "Bulbasaur",
     id: "1",
@@ -6,8 +6,7 @@ export const pokemon: Record<string, any> = [
     height: 7,
     width: 69,
     ability: "Overgrow",
-    typeImage: "images/types/grass.svg",
-    type: "grass",
+    types: ["grass", "poison"]
   },
   {
     name: "Ivysaur",
@@ -16,8 +15,7 @@ export const pokemon: Record<string, any> = [
     height: 10,
     width: 130,
     ability: "Overgrow",
-    typeImage: "images/types/grass.svg",
-    type: "grass",
+    types: ["grass", "poison"]
   },
   {
     name: "Venusaur",
@@ -26,8 +24,7 @@ export const pokemon: Record<string, any> = [
     height: 20,
     width: 1000,
     ability: "Overgrow",
-    typeImage: "images/types/grass.svg",
-    type: "grass",
+    types: ["grass", "poison"]
   },
   {
     name: "Charmander",
@@ -36,8 +33,7 @@ export const pokemon: Record<string, any> = [
     height: 6,
     width: 85,
     ability: "Blaze",
-    typeImage: "images/types/fire.svg",
-    type: "fire",
+    types: ["fire"]
   },
   {
     name: "Charmeleon",
@@ -46,8 +42,7 @@ export const pokemon: Record<string, any> = [
     height: 11,
     width: 190,
     ability: "Blaze",
-    typeImage: "images/types/fire.svg",
-    type: "fire",
+    types: ["fire"]
   },
   {
     name: "Charizard",
@@ -56,8 +51,7 @@ export const pokemon: Record<string, any> = [
     height: 17,
     width: 905,
     ability: "Blaze",
-    typeImage: "images/types/fire.svg",
-    type: "fire",
+    types: ["fire", "flying"]
   },
   {
     name: "Squirtle",
@@ -66,8 +60,7 @@ export const pokemon: Record<string, any> = [
     height: 5,
     width: 90,
     ability: "Torrent",
-    typeImage: "images/types/water.svg",
-    type: "water",
+    types: ["water"]
   },
   {
     name: "Wartortle",
@@ -76,8 +69,7 @@ export const pokemon: Record<string, any> = [
     height: 10,
     width: 225,
     ability: "Torrent",
-    typeImage: "images/types/water.svg",
-    type: "water",
+    types: ["water"]
   },
   {
     name: "Blastoise",
@@ -86,8 +78,7 @@ export const pokemon: Record<string, any> = [
     height: 16,
     width: 855,
     ability: "Torrent",
-    typeImage: "images/types/water.svg",
-    type: "water",
+    types: ["water"]
   },
   {
     name: "Caterpie",
@@ -96,8 +87,7 @@ export const pokemon: Record<string, any> = [
     height: 3,
     width: 29,
     ability: "Shield-Dust",
-    typeImage: "images/types/bug.svg",
-    type: "bug",
+    types: ["bug"]
   },
   {
     name: "Metapod",
@@ -106,8 +96,7 @@ export const pokemon: Record<string, any> = [
     height: 7,
     width: 99,
     ability: "Shed-Skin",
-    typeImage: "images/types/bug.svg",
-    type: "bug",
+    types: ["bug"]
   },
   {
     name: "Butterfree",
@@ -116,8 +105,7 @@ export const pokemon: Record<string, any> = [
     height: 11,
     width: 320,
     ability: "Compound-Eyes",
-    typeImage: "images/types/bug.svg",
-    type: "bug",
+    types: ["bug", "flying"]
   },
   {
     name: "Weedle",
@@ -126,8 +114,7 @@ export const pokemon: Record<string, any> = [
     height: 3,
     width: 32,
     ability: "Shield-Dust",
-    typeImage: "images/types/bug.svg",
-    type: "bug",
+    types: ["bug", "poison"]
   },
   {
     name: "Kakuna",
@@ -136,8 +123,7 @@ export const pokemon: Record<string, any> = [
     height: 6,
     width: 100,
     ability: "Shed-Skin",
-    typeImage: "images/types/bug.svg",
-    type: "bug",
+    types: ["bug", "poison"]
   },
   {
     name: "Beedril",
@@ -146,8 +132,7 @@ export const pokemon: Record<string, any> = [
     height: 10,
     width: 295,
     ability: "Swarm",
-    typeImage: "images/types/bug.svg",
-    type: "bug",
+    types: ["bug", "poison"]
   },
   {
     name: "Pidgey",
@@ -156,8 +141,7 @@ export const pokemon: Record<string, any> = [
     height: 3,
     width: 18,
     ability: "Keen-Eye",
-    typeImage: "images/types/normal.svg",
-    type: "normal",
+    types: ["normal", "flying"]
   },
   {
     name: "Pidgeotto",
@@ -166,8 +150,7 @@ export const pokemon: Record<string, any> = [
     height: 11,
     width: 300,
     ability: "Keen-Eye",
-    typeImage: "images/types/normal.svg",
-    type: "normal",
+    types: ["normal", "flying"]
   },
   {
     name: "Pidgeot",
@@ -176,8 +159,7 @@ export const pokemon: Record<string, any> = [
     height: 15,
     width: 395,
     ability: "Keen-Eye",
-    typeImage: "images/types/normal.svg",
-    type: "normal",
+    types: ["normal", "flying"]
   },
   {
     name: "Rattata",
@@ -186,8 +168,7 @@ export const pokemon: Record<string, any> = [
     height: 3,
     width: 35,
     ability: "Run-Away",
-    typeImage: "images/types/normal.svg",
-    type: "normal",
+    types: ["normal"]
   },
   {
     name: "Raticate",
@@ -196,8 +177,7 @@ export const pokemon: Record<string, any> = [
     height: 7,
     width: 185,
     ability: "Run-Away",
-    typeImage: "images/types/normal.svg",
-    type: "normal",
+    types: ["normal"]
   },
   {
     name: "Spearow",
@@ -206,8 +186,7 @@ export const pokemon: Record<string, any> = [
     height: 3,
     width: 20,
     ability: "Keen-Eye",
-    typeImage: "images/types/normal.svg",
-    type: "normal",
+    types: ["normal", "flying"]
   },
   {
     name: "Fearow",
@@ -216,8 +195,7 @@ export const pokemon: Record<string, any> = [
     height: 12,
     width: 380,
     ability: "Keen-Eye",
-    typeImage: "images/types/normal.svg",
-    type: "normal",
+    types: ["normal", "flying"]
   },
   {
     name: "Ekans",
@@ -226,8 +204,7 @@ export const pokemon: Record<string, any> = [
     height: 20,
     width: 69,
     ability: "Intimidate",
-    typeImage: "images/types/poison.svg",
-    type: "poison",
+    types: ["poison"]
   },
   {
     name: "Arbok",
@@ -236,8 +213,7 @@ export const pokemon: Record<string, any> = [
     height: 35,
     width: 650,
     ability: "Intimidate",
-    typeImage: "images/types/poison.svg",
-    type: "poison",
+    types: ["poison"]
   },
   {
     name: "Pikachu",
@@ -246,8 +222,7 @@ export const pokemon: Record<string, any> = [
     height: 4,
     width: 60,
     ability: "Static",
-    typeImage: "images/types/eletric.svg",
-    type: "eletric",
+    types: ["electric"]
   },
   {
     name: "Raichu",
@@ -256,8 +231,7 @@ export const pokemon: Record<string, any> = [
     height: 8,
     width: 300,
     ability: "Static",
-    typeImage: "images/types/eletric.svg",
-    type: "eletric",
+    types: ["electric"]
   },
   {
     name: "Sandshrew",
@@ -266,8 +240,7 @@ export const pokemon: Record<string, any> = [
     height: 6,
     width: 120,
     ability: "Sand-Veil",
-    typeImage: "images/types/ground.svg",
-    type: "ground",
+    types: ["ground"]
   },
   {
     name: "Sandslash",
@@ -276,8 +249,7 @@ export const pokemon: Record<string, any> = [
     height: 10,
     width: 295,
     ability: "Sand-Veil",
-    typeImage: "images/types/ground.svg",
-    type: "ground",
+    types: ["ground"]
   },
   {
     name: "Nidoran - Fêmea",
@@ -286,8 +258,7 @@ export const pokemon: Record<string, any> = [
     height: 4,
     width: 70,
     ability: "Poison-Point",
-    typeImage: "images/types/poison.svg",
-    type: "poison",
+    types: ["poison"]
   },
   {
     name: "Nidorina",
@@ -296,8 +267,7 @@ export const pokemon: Record<string, any> = [
     height: 8,
     width: 200,
     ability: "Poison-Point",
-    typeImage: "images/types/poison.svg",
-    type: "poison",
+    types: ["poison"]
   },
   {
     name: "Nidoqueen",
@@ -306,8 +276,7 @@ export const pokemon: Record<string, any> = [
     height: 14,
     width: 620,
     ability: "Keen-Eye",
-    typeImage: "images/types/poison.svg",
-    type: "poison",
+    types: ["poison", "ground"]
   },
   {
     name: "Nidoran - Macho",
@@ -316,8 +285,7 @@ export const pokemon: Record<string, any> = [
     height: 5,
     width: 90,
     ability: "Poison-Point",
-    typeImage: "images/types/poison.svg",
-    type: "poison",
+    types: ["poison"]
   },
   {
     name: "Nidorino",
@@ -326,8 +294,7 @@ export const pokemon: Record<string, any> = [
     height: 9,
     width: 195,
     ability: "Poison-Point",
-    typeImage: "images/types/poison.svg",
-    type: "poison",
+    types: ["poison"]
   },
   {
     name: "Nidoking",
@@ -336,8 +303,7 @@ export const pokemon: Record<string, any> = [
     height: 14,
     width: 620,
     ability: "Poison-Point",
-    typeImage: "images/types/poison.svg",
-    type: "poison",
+    types: ["poison", "ground"]
   },
   {
     name: "Clefairy",
@@ -346,8 +312,7 @@ export const pokemon: Record<string, any> = [
     height: 6,
     width: 75,
     ability: "Cute-Charm",
-    typeImage: "images/types/fairy.svg",
-    type: "fairy",
+    types: ["fairy"]
   },
   {
     name: "Clefable",
@@ -356,8 +321,7 @@ export const pokemon: Record<string, any> = [
     height: 13,
     width: 400,
     ability: "Cute-Charm",
-    typeImage: "images/types/fairy.svg",
-    type: "fairy",
+    types: ["fairy"]
   },
   {
     name: "Vulpix",
@@ -366,8 +330,7 @@ export const pokemon: Record<string, any> = [
     height: 6,
     width: 99,
     ability: "Flash-Fire",
-    typeImage: "images/types/fire.svg",
-    type: "fire",
+    types: ["fire"]
   },
   {
     name: "Ninetales",
@@ -376,8 +339,7 @@ export const pokemon: Record<string, any> = [
     height: 11,
     width: 199,
     ability: "Flash-Fire",
-    typeImage: "images/types/fire.svg",
-    type: "fire",
+    types: ["fire"]
   },
   {
     name: "Jigglypuff",
@@ -386,8 +348,7 @@ export const pokemon: Record<string, any> = [
     height: 5,
     width: 55,
     ability: "Cute-Charm",
-    typeImage: "images/types/normal.svg",
-    type: "normal",
+    types: ["normal", "fairy"]
   },
   {
     name: "Wigglytuff",
@@ -396,8 +357,7 @@ export const pokemon: Record<string, any> = [
     height: 10,
     width: 120,
     ability: "Cute-Charm",
-    typeImage: "images/types/normal.svg",
-    type: "normal",
+    types: ["normal", "fairy"]
   },
   {
     name: "Zubat",
@@ -406,8 +366,7 @@ export const pokemon: Record<string, any> = [
     height: 8,
     width: 75,
     ability: "Inner-Focus",
-    typeImage: "images/types/poison.svg",
-    type: "poison",
+    types: ["poison", "flying"]
   },
   {
     name: "Golbat",
@@ -416,8 +375,7 @@ export const pokemon: Record<string, any> = [
     height: 16,
     width: 550,
     ability: "Inner-Focus",
-    typeImage: "images/types/poison.svg",
-    type: "poison",
+    types: ["poison", "flying"]
   },
   {
     name: "Oddish",
@@ -426,8 +384,7 @@ export const pokemon: Record<string, any> = [
     height: 5,
     width: 54,
     ability: "Cute-Charm",
-    typeImage: "images/types/grass.svg",
-    type: "grass",
+    types: ["grass", "poison"]
   },
   {
     name: "Gloom",
@@ -436,8 +393,7 @@ export const pokemon: Record<string, any> = [
     height: 8,
     width: 86,
     ability: "Chlorophyll",
-    typeImage: "images/types/poison.svg",
-    type: "poison",
+    types: ["poison", "poison"]
   },
   {
     name: "Vileplume",
@@ -446,8 +402,7 @@ export const pokemon: Record<string, any> = [
     height: 12,
     width: 186,
     ability: "Chlorophyll",
-    typeImage: "images/types/poison.svg",
-    type: "poison",
+    types: ["poison", "poison"]
   },
   {
     name: "Paras",
@@ -456,8 +411,7 @@ export const pokemon: Record<string, any> = [
     height: 3,
     width: 54,
     ability: "Effect-Spore",
-    typeImage: "images/types/bug.svg",
-    type: "bug",
+    types: ["bug", "grass"]
   },
   {
     name: "Parasect",
@@ -466,8 +420,7 @@ export const pokemon: Record<string, any> = [
     height: 10,
     width: 295,
     ability: "Effect-Spore",
-    typeImage: "images/types/bug.svg",
-    type: "bug",
+    types: ["bug", "grass"]
   },
   {
     name: "Venonat",
@@ -476,8 +429,7 @@ export const pokemon: Record<string, any> = [
     height: 10,
     width: 300,
     ability: "Compound-Eyes",
-    typeImage: "images/types/bug.svg",
-    type: "bug",
+    types: ["bug", "poison"]
   },
   {
     name: "Venomoth",
@@ -486,8 +438,7 @@ export const pokemon: Record<string, any> = [
     height: 15,
     width: 125,
     ability: "Shield-Dust",
-    typeImage: "images/types/bug.svg",
-    type: "bug",
+    types: ["bug", "poison"]
   },
   {
     name: "Diglett",
@@ -496,8 +447,7 @@ export const pokemon: Record<string, any> = [
     height: 2,
     width: 8,
     ability: "Sand-Veil",
-    typeImage: "images/types/ground.svg",
-    type: "ground",
+    types: ["ground"]
   },
   {
     name: "Dugtrio",
@@ -506,8 +456,7 @@ export const pokemon: Record<string, any> = [
     height: 7,
     width: 333,
     ability: "Sand-Veil",
-    typeImage: "images/types/ground.svg",
-    type: "ground",
+    types: ["ground"]
   },
   {
     name: "Meowth",
@@ -516,8 +465,7 @@ export const pokemon: Record<string, any> = [
     height: 4,
     width: 42,
     ability: "Pickup",
-    typeImage: "images/types/normal.svg",
-    type: "normal",
+    types: ["normal"]
   },
   {
     name: "Persian",
@@ -526,8 +474,7 @@ export const pokemon: Record<string, any> = [
     height: 10,
     width: 320,
     ability: "Limber",
-    typeImage: "images/types/normal.svg",
-    type: "normal",
+    types: ["normal"]
   },
   {
     name: "Psyduck",
@@ -536,8 +483,7 @@ export const pokemon: Record<string, any> = [
     height: 8,
     width: 196,
     ability: "Damp",
-    typeImage: "images/types/water.svg",
-    type: "water",
+    types: ["water"]
   },
   {
     name: "Golduck",
@@ -546,8 +492,7 @@ export const pokemon: Record<string, any> = [
     height: 17,
     width: 766,
     ability: "Damp",
-    typeImage: "images/types/water.svg",
-    type: "water",
+    types: ["water"]
   },
   {
     name: "Mankey",
@@ -556,8 +501,7 @@ export const pokemon: Record<string, any> = [
     height: 5,
     width: 280,
     ability: "Vital-Spirit",
-    typeImage: "images/types/fighting.svg",
-    type: "fighting",
+    types: ["fighting"]
   },
   {
     name: "Primeape",
@@ -566,8 +510,7 @@ export const pokemon: Record<string, any> = [
     height: 10,
     width: 320,
     ability: "Vital-Spirit",
-    typeImage: "images/types/fighting.svg",
-    type: "fighting",
+    types: ["fighting"]
   },
   {
     name: "Growlithe",
@@ -576,8 +519,7 @@ export const pokemon: Record<string, any> = [
     height: 7,
     width: 190,
     ability: "Intimidate",
-    typeImage: "images/types/fire.svg",
-    type: "fire",
+    types: ["fire"]
   },
   {
     name: "Arcanine",
@@ -586,8 +528,7 @@ export const pokemon: Record<string, any> = [
     height: 19,
     width: 1550,
     ability: "Intimidate",
-    typeImage: "images/types/fire.svg",
-    type: "fire",
+    types: ["fire"]
   },
   {
     name: "Poliwag",
@@ -596,8 +537,7 @@ export const pokemon: Record<string, any> = [
     height: 6,
     width: 124,
     ability: "Water-Absorb",
-    typeImage: "images/types/water.svg",
-    type: "water",
+    types: ["water"]
   },
   {
     name: "Poliwhirl",
@@ -606,8 +546,7 @@ export const pokemon: Record<string, any> = [
     height: 10,
     width: 200,
     ability: "Water-Absorb",
-    typeImage: "images/types/water.svg",
-    type: "water",
+    types: ["water"]
   },
   {
     name: "Poliwrath",
@@ -616,8 +555,7 @@ export const pokemon: Record<string, any> = [
     height: 13,
     width: 540,
     ability: "Water-Absorb",
-    typeImage: "images/types/water.svg",
-    type: "water",
+    types: ["water", "fighting"]
   },
   {
     name: "Abra",
@@ -626,8 +564,7 @@ export const pokemon: Record<string, any> = [
     height: 9,
     width: 195,
     ability: "Synchronize",
-    typeImage: "images/types/psychic.svg",
-    type: "psychic",
+    types: ["psychic"]
   },
   {
     name: "Kadabra",
@@ -636,8 +573,7 @@ export const pokemon: Record<string, any> = [
     height: 13,
     width: 545,
     ability: "Synchronize",
-    typeImage: "images/types/psychic.svg",
-    type: "psychic",
+    types: ["psychic"]
   },
   {
     name: "Alakazam",
@@ -646,8 +582,7 @@ export const pokemon: Record<string, any> = [
     height: 15,
     width: 480,
     ability: "Synchronize",
-    typeImage: "images/types/psychic.svg",
-    type: "psychic",
+    types: ["psychic"]
   },
   {
     name: "Machop",
@@ -656,8 +591,7 @@ export const pokemon: Record<string, any> = [
     height: 8,
     width: 195,
     ability: "Guts",
-    typeImage: "images/types/fighting.svg",
-    type: "fighting",
+    types: ["fighting"]
   },
   {
     name: "Machoke",
@@ -666,8 +600,7 @@ export const pokemon: Record<string, any> = [
     height: 15,
     width: 705,
     ability: "Guts",
-    typeImage: "images/types/fighting.svg",
-    type: "fighting",
+    types: ["fighting"]
   },
   {
     name: "Machamp",
@@ -676,8 +609,7 @@ export const pokemon: Record<string, any> = [
     height: 16,
     width: 1300,
     ability: "Guts",
-    typeImage: "images/types/fighting.svg",
-    type: "fighting",
+    types: ["fighting"]
   },
   {
     name: "Bellsprout",
@@ -686,8 +618,7 @@ export const pokemon: Record<string, any> = [
     height: 7,
     width: 40,
     ability: "Chlorophyll",
-    typeImage: "images/types/grass.svg",
-    type: "grass",
+    types: ["grass", "poison"]
   },
   {
     name: "Weepinbell",
@@ -696,8 +627,7 @@ export const pokemon: Record<string, any> = [
     height: 10,
     width: 64,
     ability: "Chlorophyll",
-    typeImage: "images/types/grass.svg",
-    type: "grass",
+    types: ["grass", "poison"]
   },
   {
     name: "Victreebel",
@@ -706,8 +636,7 @@ export const pokemon: Record<string, any> = [
     height: 17,
     width: 155,
     ability: "Overgrow",
-    typeImage: "images/types/grass.svg",
-    type: "grass",
+    types: ["grass", "poison"]
   },
   {
     name: "Tentacool",
@@ -716,8 +645,7 @@ export const pokemon: Record<string, any> = [
     height: 9,
     width: 455,
     ability: "Clear-Body",
-    typeImage: "images/types/water.svg",
-    type: "water",
+    types: ["water", "poison"]
   },
   {
     name: "Tentacruel",
@@ -726,8 +654,7 @@ export const pokemon: Record<string, any> = [
     height: 16,
     width: 550,
     ability: "Clear-Body",
-    typeImage: "images/types/water.svg",
-    type: "water",
+    types: ["water", "poison"]
   },
   {
     name: "Geodude",
@@ -736,8 +663,7 @@ export const pokemon: Record<string, any> = [
     height: 4,
     width: 200,
     ability: "Rock-Head",
-    typeImage: "images/types/rock.svg",
-    type: "rock",
+    types: ["rock", "ground"]
   },
   {
     name: "Graveler",
@@ -746,8 +672,7 @@ export const pokemon: Record<string, any> = [
     height: 10,
     width: 1050,
     ability: "Rock-Head",
-    typeImage: "images/types/rock.svg",
-    type: "rock",
+    types: ["rock", "ground"]
   },
   {
     name: "Golem",
@@ -756,8 +681,7 @@ export const pokemon: Record<string, any> = [
     height: 10,
     width: 130,
     ability: "Rock-Head",
-    typeImage: "images/types/rock.svg",
-    type: "grass",
+    types: ["rock", "ground"]
   },
   {
     name: "Ponyta",
@@ -766,8 +690,7 @@ export const pokemon: Record<string, any> = [
     height: 10,
     width: 300,
     ability: "Run-Away",
-    typeImage: "images/types/fire.svg",
-    type: "grass",
+    types: ["fire"]
   },
   {
     name: "Rapidash",
@@ -776,8 +699,7 @@ export const pokemon: Record<string, any> = [
     height: 17,
     width: 950,
     ability: "Run-Away",
-    typeImage: "images/types/fire.svg",
-    type: "grass",
+    types: ["fire"]
   },
   {
     name: "Slowpoke",
@@ -786,8 +708,7 @@ export const pokemon: Record<string, any> = [
     height: 12,
     width: 360,
     ability: "Oblivious",
-    typeImage: "images/types/water.svg",
-    type: "grass",
+    types: ["water", "psychic"]
   },
   {
     name: "Slowbro",
@@ -796,8 +717,7 @@ export const pokemon: Record<string, any> = [
     height: 16,
     width: 785,
     ability: "Oblivious",
-    typeImage: "images/types/water.svg",
-    type: "grass",
+    types: ["water", "psychic"]
   },
   {
     name: "Magnemite",
@@ -806,8 +726,7 @@ export const pokemon: Record<string, any> = [
     height: 3,
     width: 60,
     ability: "Magnet-Pull",
-    typeImage: "images/types/eletric.svg",
-    type: "grass",
+    types: ["electric", "steel"]
   },
   {
     name: "Magneton",
@@ -816,8 +735,7 @@ export const pokemon: Record<string, any> = [
     height: 10,
     width: 600,
     ability: "Magnet-Pull",
-    typeImage: "images/types/eletric.svg",
-    type: "grass",
+    types: ["electric", "steel"]
   },
   {
     name: "Farfetchd",
@@ -826,8 +744,7 @@ export const pokemon: Record<string, any> = [
     height: 8,
     width: 150,
     ability: "Keen-Eye",
-    typeImage: "images/types/normal.svg",
-    type: "grass",
+    types: ["normal", "flying"]
   },
   {
     name: "Doduo",
@@ -836,8 +753,7 @@ export const pokemon: Record<string, any> = [
     height: 14,
     width: 392,
     ability: "Run-Away",
-    typeImage: "images/types/normal.svg",
-    type: "grass",
+    types: ["normal", "flying"]
   },
   {
     name: "Dodrio",
@@ -846,8 +762,7 @@ export const pokemon: Record<string, any> = [
     height: 18,
     width: 852,
     ability: "Run-Away",
-    typeImage: "images/types/normal.svg",
-    type: "grass",
+    types: ["normal", "flying"]
   },
   {
     name: "Seel",
@@ -856,8 +771,7 @@ export const pokemon: Record<string, any> = [
     height: 11,
     width: 900,
     ability: "Thick-Fat",
-    typeImage: "images/types/water.svg",
-    type: "grass",
+    types: ["water"]
   },
   {
     name: "Dewgong",
@@ -866,8 +780,7 @@ export const pokemon: Record<string, any> = [
     height: 17,
     width: 1200,
     ability: "Thick-Fat",
-    typeImage: "images/types/water.svg",
-    type: "grass",
+    types: ["water", "ice"]
   },
   {
     name: "Grimer",
@@ -876,8 +789,7 @@ export const pokemon: Record<string, any> = [
     height: 9,
     width: 300,
     ability: "Stench",
-    typeImage: "images/types/poison.svg",
-    type: "grass",
+    types: ["poison"]
   },
   {
     name: "Muk",
@@ -886,8 +798,7 @@ export const pokemon: Record<string, any> = [
     height: 12,
     width: 300,
     ability: "Stench",
-    typeImage: "images/types/poison.svg",
-    type: "grass",
+    types: ["poison"]
   },
   {
     name: "Shellder",
@@ -896,8 +807,7 @@ export const pokemon: Record<string, any> = [
     height: 3,
     width: 40,
     ability: "Shell-Armor",
-    typeImage: "images/types/water.svg",
-    type: "grass",
+    types: ["water"]
   },
   {
     name: "Cloyster",
@@ -906,8 +816,7 @@ export const pokemon: Record<string, any> = [
     height: 15,
     width: 1325,
     ability: "Shell-Armor",
-    typeImage: "images/types/water.svg",
-    type: "grass",
+    types: ["water", "ice"]
   },
   {
     name: "Gastly",
@@ -916,8 +825,7 @@ export const pokemon: Record<string, any> = [
     height: 13,
     width: 1,
     ability: "Levitate",
-    typeImage: "images/types/ghost.svg",
-    type: "grass",
+    types: ["ghost", "poison"]
   },
   {
     name: "Haunter",
@@ -926,8 +834,7 @@ export const pokemon: Record<string, any> = [
     height: 16,
     width: 1,
     ability: "Levitate",
-    typeImage: "images/types/ghost.svg",
-    type: "grass",
+    types: ["ghost", "poison"]
   },
   {
     name: "Gengar",
@@ -936,8 +843,7 @@ export const pokemon: Record<string, any> = [
     height: 15,
     width: 405,
     ability: "Cursed-Body",
-    typeImage: "images/types/ghost.svg",
-    type: "grass",
+    types: ["ghost", "poison"]
   },
   {
     name: "Onix",
@@ -946,8 +852,7 @@ export const pokemon: Record<string, any> = [
     height: 88,
     width: 2100,
     ability: "Rock-Head",
-    typeImage: "images/types/rock.svg",
-    type: "rock",
+    types: ["rock", "ground"]
   },
   {
     name: "Drowzee",
@@ -956,8 +861,7 @@ export const pokemon: Record<string, any> = [
     height: 10,
     width: 324,
     ability: "Insomnia",
-    typeImage: "images/types/psychic.svg",
-    type: "psychic",
+    types: ["psychic"]
   },
   {
     name: "Hypno",
@@ -966,8 +870,7 @@ export const pokemon: Record<string, any> = [
     height: 16,
     width: 756,
     ability: "Insomnia",
-    typeImage: "images/types/psychic.svg",
-    type: "psychic",
+    types: ["psychic"]
   },
   {
     name: "Krabby",
@@ -976,8 +879,7 @@ export const pokemon: Record<string, any> = [
     height: 4,
     width: 65,
     ability: "Hyper-Cutter",
-    typeImage: "images/types/water.svg",
-    type: "water",
+    types: ["water"]
   },
   {
     name: "Kingler",
@@ -986,7 +888,8 @@ export const pokemon: Record<string, any> = [
     height: 13,
     width: 600,
     ability: "Hyper-Cutter",
-    typeImage: "images/types/water.svg",
-    type: "water",
+    types: ["water"]
   },
 ];
+
+export default firstGeneration;

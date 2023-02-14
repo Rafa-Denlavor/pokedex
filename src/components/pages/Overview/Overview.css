@@ -31,12 +31,6 @@
   flex-wrap: wrap;
 }
 
-.continue {
-  font-weight: 600;
-  font-size: 40px;
-  padding-top: var(--gap-40);
-}
-
 @media screen and (max-width: 1400px) {
   .pokedex {
     display: grid;
